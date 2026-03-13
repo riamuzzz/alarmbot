@@ -1,8 +1,8 @@
 import Discord from "discord.js";
-const serverId = "968628248613376082";
-const channelId = "968685419099217970";
+const serverId = "hoge";
+const channelId = "hoge";
 const allIntents: Discord.ClientOptions = {
-    intents: new Discord.Intents(32767),
+    intents: new Discord.Intents(),
 };
 const client = new Discord.Client(allIntents);
 client.on("ready", async () => {

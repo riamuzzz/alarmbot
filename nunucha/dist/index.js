@@ -13,10 +13,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const discord_js_1 = __importDefault(require("discord.js"));
-const serverId = "968628248613376082";
-const channelId = "968685419099217970";
+const serverId = "hoge";
+const channelId = "hoge";
 const allIntents = {
-    intents: new discord_js_1.default.Intents(32767),
+    intents: new discord_js_1.default.Intents(),
 };
 const client = new discord_js_1.default.Client(allIntents);
 client.on("ready", () => __awaiter(void 0, void 0, void 0, function* () {
@@ -82,4 +82,4 @@ client.on("voiceStateUpdate", (oldState, newState) => __awaiter(void 0, void 0, 
 client.on("messageCreate", (msg) => {
     msg.channel;
 });
-client.login("OTY5MDc3NDc5MTUzMjE3NTM2.YmoJuw.cY-FNzYErUf4tPHnnOZ0P1x1M7Y");
+//省略
